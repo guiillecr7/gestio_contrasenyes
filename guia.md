@@ -58,12 +58,12 @@ El punt més fluix de KeePass és que és una mica menys còmode que Bitwarden (
 3. Executar l'arxiu descarregat i seguir l'assistent (acceptar la llicència i deixar les opcions per defecte).
 4. Obrir KeePass des del menú d'inici.
 
-![Web oficial de KeePass](img/keepass-01-web.png)
+![Web oficial de KeePass](keepass-01-web.png)
 *Figura 1. Web oficial de KeePass, d'on es descarrega el programa.*
 
 En obrir-lo per primera vegada, la finestra principal apareix buida perquè encara no hi ha cap base de dades.
 
-![Finestra principal buida](img/keepass-02-finestra-buida.png)
+![Finestra principal buida](keepass-02-finestra-buida.png)
 *Figura 2. Finestra principal de KeePass sense cap base de dades.*
 
 ### 4.2 Creació de la base de dades
@@ -72,14 +72,14 @@ En obrir-lo per primera vegada, la finestra principal apareix buida perquè enca
 2. Triar la carpeta i posar-li un nom. En aquest cas: `Base_datos_empresa.kdbx`, a la carpeta Documents.
 3. Fer clic a **Guardar**.
 
-![Nom i ubicació de la base de dades](img/keepass-03-guardar-bd.png)
+![Nom i ubicació de la base de dades](keepass-03-guardar-bd.png)
 *Figura 3. Selecció del nom i la ubicació de la nova base de dades.*
 
 ### 4.3 Creació de la clau mestra
 
 KeePass demana ara la **clau mestra**. És l'única contrasenya que cal recordar i protegeix tot el contingut. Escriviu-la i repetiu-la al camp inferior.
 
-![Creació de la clau mestra](img/keepass-04-clau-mestra.png)
+![Creació de la clau mestra](keepass-04-clau-mestra.png)
 *Figura 4. Creació de la clau mestra.*
 
 **Consells per a la clau mestra:**
@@ -93,7 +93,7 @@ KeePass demana ara la **clau mestra**. És l'única contrasenya que cal recordar
 
 Un cop creada, la base de dades apareix amb uns grups per defecte (General, Windows, Network, Internet, eMail, Homebanking) i unes entrades d'exemple que es poden esborrar.
 
-![Base de dades creada](img/keepass-05-bd-creada.png)
+![Base de dades creada](keepass-05-bd-creada.png)
 *Figura 5. Base de dades creada, amb els grups per defecte.*
 
 ## 5. KeePass: generar contrasenyes segures
@@ -104,7 +104,7 @@ KeePass inclou un generador de contrasenyes. S'hi accedeix des de **Tools > Pass
 - **Tipus de caràcters:** majúscules, minúscules i dígits com a mínim. Afegir símbols augmenta la seguretat, però alguns serveis no els accepten.
 - **Perfil:** es poden desar perfils diferents (per exemple, un sense símbols per a serveis restrictius).
 
-![Opcions del generador](img/keepass-06-generador.png)
+![Opcions del generador](keepass-06-generador.png)
 *Figura 6. Opcions del generador de contrasenyes (longitud 20; majúscules, minúscules i dígits).*
 
 Una contrasenya generada de 20 caràcters assoleix uns 105 bits de qualitat, molt per sobre d'una contrasenya triada a mà. **Cada servei ha de tenir una contrasenya diferent.**
@@ -119,17 +119,17 @@ Una contrasenya generada de 20 caràcters assoleix uns 105 bits de qualitat, mol
 4. A **Password**, utilitzar el generador (icona de la clau) per crear una contrasenya segura.
 5. Fer clic a **OK** i desar la base de dades amb `Ctrl+S`.
 
-![Nova entrada](img/keepass-07-nova-entrada.png)
+![Nova entrada](keepass-07-nova-entrada.png)
 *Figura 7. Nova entrada "Correu corporatiu" amb contrasenya generada (105 bits, 20 caràcters).*
 
 Per **modificar** una entrada, es fa doble clic damunt seu (o **Entry > Edit Entry**). Es poden canviar l'usuari, la contrasenya o la URL, i KeePass desa un historial de versions.
 
-![Edició d'una entrada](img/keepass-08-editar-entrada.png)
+![Edició d'una entrada](keepass-08-editar-entrada.png)
 *Figura 8. Edició d'una entrada existent.*
 
 Un cop desada, l'entrada apareix al grup eMail i la contrasenya queda amagada amb asteriscs.
 
-![Entrada desada](img/keepass-09-entrada-desada.png)
+![Entrada desada](keepass-09-entrada-desada.png)
 *Figura 9. Entrada del correu desada al grup eMail.*
 
 ### 6.2 Desar altres comptes o serveis web
@@ -188,27 +188,27 @@ Tota la informació és dins d'un únic arxiu (`Base_datos_empresa.kdbx`), així
 
 **Pas 2.** Entrar al Compte de Google i fer clic a **Seguretat i inici de sessió**. Es veurà que la verificació en dos passos està desactivada.
 
-![Pantalla de seguretat](img/2fa-01-seguretat.png)
+![Pantalla de seguretat](01-seguretat.png)
 *Imatge 1. Pantalla de seguretat del Compte de Google.*
 
 **Pas 3.** Fer clic a **Verificació en dos passos**. A l'apartat "Segon pas" hi ha diferents opcions. Escollir **Authenticator**.
 
-![Opcions de segon pas](img/2fa-02-segon-pas.png)
+![Opcions de segon pas](02-segon-pas.png)
 *Imatge 2. Opcions de segon pas.*
 
 **Pas 4.** Surt un codi QR a la pantalla. Al mòbil, obrir l'aplicació, tocar el botó **+** i escollir **Escaneja un codi QR**. Escanejar el QR i fer clic a **Següent**.
 
-![Codi QR](img/2fa-03-qr.png)
+![Codi QR](2fa-03-qr.png)
 *Imatge 3. Codi QR per vincular l'aplicació.*
 
 **Pas 5.** L'aplicació mostra un codi de 6 números. Escriure'l a l'ordinador. *Compte: el codi canvia cada poc temps.*
 
-![Autenticador afegit](img/2fa-04-autenticador-afegit.png)
+![Autenticador afegit](2fa-04-autenticador-afegit.png)
 *Imatge 4. Autenticador afegit.*
 
 **Pas 6.** Fer clic a **Activa la verificació en dos passos**. Quan surti el missatge de confirmació, fer clic a **Fet**.
 
-![Verificació activada](img/2fa-05-activada.png)
+![Verificació activada](2fa-05-activada.png)
 *Imatge 5. Verificació en dos passos activada.*
 
 ### 8.4 Com s'entra al compte a partir d'ara?
